@@ -51,7 +51,7 @@ int Partition(T V[], int ini, int fin) {
 }
 
 template <typename T>
-void QuickSort(std::vector<T> &V, int ini, int fin) {
+void QuickSort(T V[], int ini, int fin) {
     if (ini < fin) {
         int pivot = Partition(V, ini, fin);
         QuickSort(V, ini, pivot - 1);
